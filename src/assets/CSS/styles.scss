@@ -16,6 +16,16 @@ p{
 
 }
 
+a{
+    color: #9c7f4b;
+
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
 .grid-container{
     display: grid;   
 }
@@ -48,11 +58,6 @@ body{
     background-color: white;
     box-shadow: 0 5px 7px rgba($color: #9c7f4b, $alpha: .5);
 
-    a{
-        color: #9c7f4b;
-        text-decoration: none;
-    }
-
     .logo{
         flex: 0 2 auto;
         max-width: 300px;
@@ -64,10 +69,6 @@ body{
         margin: 2vh;
         }
 
-        // @media only screen and (max-width: 400px) { 
-        //     align-self: center;
-
-        // }
 
     ul.grid-container{
 
@@ -83,8 +84,17 @@ body{
             font-size: 3vh;
             color: #9c7f4b;
 
+            border-bottom: 1px solid rgba($color: #9c7f4b, $alpha: 0);
+
+
             margin-bottom: .5vh;
             padding: 0 2vw;
+
+            transition: all 0.2s ease-out;
+
+            &:hover{
+                border-color: rgba($color: #9c7f4b, $alpha: 1);
+            }
 
         }
     }
@@ -193,6 +203,8 @@ body{
 
             .languages{
                 
+                list-style: none;
+
                 align-self: start;
                 justify-self: start;
                 margin: 5vh 0;
@@ -203,9 +215,17 @@ body{
                 
                 grid-gap: 1rem;
     
-                // .project-link{
+                .project-link{
+                    color:  #9c7f4b;
 
-                // }
+                    border-bottom: 1px solid rgba($color: #9c7f4b, $alpha: 0);
+                    transition: all 0.5s ease-out;
+
+                    &:hover{
+                          border-color: rgba($color: #9c7f4b, $alpha: 1); ;
+                      }
+                }
+
     
             }
 
@@ -214,7 +234,7 @@ body{
     }
 
     .curriculum.flex-container{
-        justify-content: space-around;
+        justify-content: space-between;
         flex-flow: row wrap-reverse;
         padding-top: 20vh;
 
@@ -233,44 +253,70 @@ body{
 
             .badge{
                 max-width: 200px;
+
+                transition: all 0.3s ease-out;
+
+                &:hover{
+                    box-shadow: 0px 5px 7px rgba($color: #a49b68, $alpha: .5);;
+                }
             }
         }
 
         .resumee-container{
-            // flex: ;
-            max-width: 90%;
-            margin: 0 10% 10vh;
+            margin: 0 5% 10vh;
         
             @extend %content-card;
-
+            
             .resumee{
                 text-align: left;
+                max-width: 500px;
+        
 
                 #curriculum{
-                    max-width: 500px;
+                    margin: 0;
+                }
+
+                p{
+                    border-bottom: 1px solid rgba($color: #9c7f4b, $alpha: 0);
+                    transition: all 0.5s ease-out;
+
+                    &:hover{
+                          border-color: rgba($color: #9c7f4b, $alpha: 1); ;
+                      }
                 }
             }
         }
     }
 }
 
-footer{
+footer.flex-container{
     background-color: rgba($color: rgba(34, 34, 34, 0.443), $alpha: 1.0);
-     box-shadow: 0 -3px 7px rgba($color: #9c7f4b, $alpha: .5);
+    box-shadow: 0 -3px 7px rgba($color: #9c7f4b, $alpha: .5);
 
 
     border-radius: 35px 35px 0 0;
     margin: 0 2vh;
-    padding: 4vh 4vh 0;
+    padding: 2vh 4vh 0;
 
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
 
-    p,a,ul,li{
-        color:  #d5b06a;
-        text-decoration: none;
-        font: 1em sans-serif;
+    color:  #d5b06a;
+
+    *{
+        font-family: sans-serif;
+        font-size: 1em;    
+    }
+    a{
+
+
+        border-bottom: 1px solid rgba($color: #9c7f4b, $alpha: 0);
+        transition: all 0.3s ease-out;
+
+        &:hover{
+                    border-bottom: 1px solid rgba($color: #9c7f4b, $alpha: 1);
+        }
     }
 
 }
