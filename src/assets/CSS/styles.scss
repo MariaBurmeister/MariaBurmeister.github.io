@@ -124,7 +124,8 @@ body{
 
 
     background-image: url('./../images/folhagem-fundo-verde.png');
-    background-repeat: repeat;
+    background-size: cover;
+    // background-repeat: repeat;
     background-position: center;
 
 
@@ -234,7 +235,7 @@ body{
     }
 
     .curriculum.flex-container{
-        justify-content: space-between;
+        justify-content: space-around;
         flex-flow: row wrap-reverse;
         padding-top: 20vh;
 
