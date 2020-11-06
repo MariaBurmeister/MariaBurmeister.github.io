@@ -78,6 +78,8 @@ body{
         flex-flow: row wrap;
         justify-content: flex-end;
 
+        margin-right: 1vh;
+
         li.nav-button{
             display: inline-block;
 
@@ -204,6 +206,8 @@ body{
 
             .languages{
                 
+                font-size: 1.1rem;
+
                 list-style: none;
 
                 align-self: start;
@@ -308,6 +312,7 @@ footer.flex-container{
     *{
         font-family: sans-serif;
         font-size: 1em;    
+        line-height: 1.4rem;
     }
     a{
 
