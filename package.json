@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel ./src/index.html",
     "build": "parcel build ./src/index.html",
-    "predeploy": "npm run build",
+    "postbuild": "cp CNAME dist"
+    "predeploy": "rm -rf dist && npm run build",
     "deploy":"push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "author": "MariaBurmeister",
