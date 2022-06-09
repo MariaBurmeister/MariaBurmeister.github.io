@@ -9,7 +9,7 @@
     "build": "parcel build ./src/index.html",
     "postbuild": "cp CNAME dist",
     "predeploy": "rm -rf dist && npm run build",
-    "deploy":"push-dir --dir=dist --branch=gh-pages --cleanup"
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "author": "MariaBurmeister",
   "license": "ISC",
